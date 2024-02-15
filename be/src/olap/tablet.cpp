@@ -152,6 +152,7 @@ bvar::Adder<uint64_t> exceed_version_limit_counter;
 bvar::Window<bvar::Adder<uint64_t>> exceed_version_limit_counter_minute(
         &exceed_version_limit_counter, 60);
 
+// commet
 void set_last_failure_time(Tablet* tablet, const Compaction& compaction, int64_t ms) {
     switch (compaction.compaction_type()) {
     case ReaderType::READER_CUMULATIVE_COMPACTION:
